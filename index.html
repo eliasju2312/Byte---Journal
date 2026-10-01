@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <!-- PASO 1: Metadatos y conexión con CSS y JavaScript. -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BYTE Journal · Blog: proyecto web de tecnología con diseño responsive.">
+    <title>
+      BYTE Journal · Blog
+    </title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <!-- PASO 2: Encabezado y navegación. -->
+    <header>
+      <a class="brand" href="#">
+        BYTE
+        <span>
+          JOURNAL.
+        </span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#lecturas">
+          Lecturas
+        </a>
+        <a href="#sobre">
+          Sobre el proyecto
+        </a>
+      </nav>
+    </header>
+    <!-- PASO 3: Contenido principal de la página. -->
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">
+            Ideas para entender el mundo digital
+          </span>
+          <h1>
+            La tecnología,
+            <br>
+            sin complicaciones.
+          </h1>
+          <p>
+            Lecturas breves sobre inteligencia artificial, desarrollo web y seguridad digital para mentes curiosas.
+          </p>
+          <a class="button" href="#lecturas">
+            Comenzar a leer
+          </a>
+        </div>
+        <aside class="cover">
+          <span class="tag" style="color:#b9c9ff">
+            Cuaderno digital / 01
+          </span>
+          <div class="stat">
+            HELLO
+            <br>
+            FUTURE.
+          </div>
+          <p>
+            Aprende algo nuevo.
+            <br>
+            Construye algo propio.
+          </p>
+        </aside>
+      </section>
+      <section id="lecturas">
+        <div class="sectionhead">
+          <h2>
+            Tu próxima lectura
+          </h2>
+          <input id="search" type="search" placeholder="Buscar un tema…" aria-label="Buscar artículos">
+        </div>
+        <div id="filters" class="filters">
+          <button data-filter="Todos" aria-pressed="true">
+            Todos
+          </button>
+          <button data-filter="Inteligencia artificial" aria-pressed="false">
+            IA
+          </button>
+          <button data-filter="Desarrollo web" aria-pressed="false">
+            Desarrollo web
+          </button>
+          <button data-filter="Ciberseguridad" aria-pressed="false">
+            Ciberseguridad
+          </button>
+        </div>
+        <p id="results" aria-live="polite" class="issue">
+        </p>
+        <div id="articles" class="grid">
+        </div>
+      </section>
+      <section id="sobre">
+        <h2>
+          Ideas que se convierten en proyectos
+        </h2>
+        <p>
+          BYTE Journal es un blog educativo de demostración. Sus artículos introductorios son contenido original de ejemplo, sin noticias ni fechas ficticias.
+        </p>
+      </section>
+    </main>
+    <!-- PASO 4: Pie de página. -->
+    <footer>
+      <strong>
+        BYTE JOURNAL.
+      </strong>
+      <span>
+        Curiosidad + código + aprendizaje
+      </span>
+    </footer>
+    <!-- PASO 5: Ventana modal, controlada desde script.js. -->
+    <dialog id="reader" aria-labelledby="read-title">
+      <button id="close" class="close">
+        Cerrar
+      </button>
+      <p id="read-category" class="tag">
+      </p>
+      <h2 id="read-title">
+      </h2>
+      <p id="read-body">
+      </p>
+    </dialog>
+  </body>
+</html>
