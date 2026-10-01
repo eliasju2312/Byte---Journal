@@ -1,20 +1,28 @@
-# BYTE Journal · Blog
+# BYTE Journal
 
-Proyecto de demostración en HTML, CSS y JavaScript puro. Sin dependencias, instalación ni claves API. Diseño adaptable y controles accesibles.
+Blog educativo sobre inteligencia artificial, desarrollo web y ciberseguridad, desarrollado con HTML, CSS y JavaScript.
 
-## Usar
-Abre `index.html` en tu navegador. También puedes servirlo con `python -m http.server 8000` y visitar `http://localhost:8000`.
+## Funcionalidades
+- Búsqueda de artículos por palabras clave.
+- Filtros por categoría.
+- Lectura de artículos en ventanas modales.
+- Mensaje cuando una búsqueda no tiene resultados.
+- Diseño adaptable a celulares y computadoras.
 
-## Subir a GitHub
-1. Crea un repositorio con el nombre `02-byte-journal`.
-2. En **Add file → Upload files**, sube el contenido de esta carpeta (index.html debe estar en la raíz).
-3. Guarda con **Commit changes**.
-4. Para mostrar la página, configura GitHub Pages con la rama que contiene los archivos y la carpeta raíz.
+## Tecnologías
+- **HTML:** estructura y contenido.
+- **CSS:** estilos y diseño responsive.
+- **JavaScript:** búsqueda, filtros y ventanas de lectura.
 
-## Personalizar
-Edita el contenido en `index.html`, la paleta en `styles.css` y los datos e interacciones en `script.js`.
+## Archivos
+- `index.html`: estructura de la página.
+- `styles.css`: estilos visuales.
+- `script.js`: datos de los artículos e interacciones.
+- `favicon.svg`: ícono de la página.
+- `GUIA-CODIGO.md`: explicación del código paso a paso.
+
+## Ejecutar
+Descarga el proyecto y abre `index.html` en tu navegador. No requiere instalar dependencias.
 
 ## Alcance
-Proyecto frontend de demostración. No tiene servidor, cuentas de usuario ni integraciones externas.
-
-Creado con asistencia de IA; revisa y adapta el código para tu portafolio.
+Proyecto frontend con artículos educativos de ejemplo. No incluye servidor ni administrador de contenidos..
